@@ -1,0 +1,15 @@
+; Move the print head to within the bowl 
+
+G1 X0 Y0 Z20 F900
+
+; Select extruder 1
+T0
+
+; Extrude atleast 15 mL (enough to get out of the nozzle)
+G1 E15 F5
+
+; Pause for 15 seconds
+G04 S10 (creates a pause for # seconds)
+
+; Move print head to home
+M98 P/macros/Required Macros/Home Printer Head

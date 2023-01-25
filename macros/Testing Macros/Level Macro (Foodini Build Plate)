@@ -1,0 +1,18 @@
+; leveling macro
+
+; insert materials and their respective z-coords off build plate
+ 
+;Foodini Build Plate (4.3 mm thickness)
+G90
+G1 X0 Y0 Z15 F1800			; Moves Z axis down to 20mm above the buildplate at 1800 mm/s
+G1 X0 Y0 Z0 F900			; Moves Z axis down to 10mm above the buildplaye at 900 mm/s
+
+; jelly
+;G90
+;G1 X0 Y0 Z10.5 F1800
+;G91 X0 Y0 Z0.5 F900
+
+;Mashed Potatoes
+;G90
+;G1 X0 Y0 Z12.5 F1800
+;G91 X0 Y0 Z2 F900

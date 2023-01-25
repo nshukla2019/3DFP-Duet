@@ -1,0 +1,5 @@
+G90
+G1 X0 Y0 Z{move.axes[2].max} F2200
+
+;G90						; Relative positioning
+;G1 X0 Y0 Z240 F2200		; Moves to the position that is set at X0, Y0, Z255 (This is our "home" position) at 1800 mm/minute??

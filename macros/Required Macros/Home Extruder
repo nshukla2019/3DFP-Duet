@@ -1,0 +1,9 @@
+; Based on the object model found (Link 1) and the use of expressions (Link 2),
+; the current position of the extruder is stored in move.extruders[0].position.
+; 		Link 1 - https://github.com/Duet3D/RepRapFirmware/wiki/Object-Model-Documentation#moveextruderscurrent
+; 		Link 2 - https://docs.duet3d.com/en/User_manual/Reference/Gcode_meta_commands
+; With the position 0, being the "homed" position, we use the negative value of the position,
+; as the distance and direction in which we want the extruder to move.
+
+G1 E{-move.extruders[0].position} F2	
+										;

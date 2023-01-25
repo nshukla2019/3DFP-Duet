@@ -1,0 +1,1 @@
+echo "trigger 2 launched"

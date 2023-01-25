@@ -1,0 +1,5 @@
+# All .DS_Store files
+.DS_Store
+
+# We don't want any files to be changed within the folder "Configurations-bugfix-2.1.x"
+# Configurations-bugfix-2.1.x/

@@ -1,0 +1,9 @@
+;3DFP Homing Function
+;G90						; Relative positioning
+;G1 X0 Y0 Z240 F2200		; Moves to the position that is set at X0, Y0, Z255 (This is our "home" position) at 1800 mm/minute??
+
+;Extruder Homing Function
+;G1 E-10.5 F2
+
+M98 P/macros/Required Macros/Home Extruder ; Runs the "Home Extruder Test" macro from the "aacros/Required Macros" directory
+M98 P/macros/Required Macros/Home Printer Head  ; Runs the "Home Printer Head" macro from the "aacros/Required Macros" directory

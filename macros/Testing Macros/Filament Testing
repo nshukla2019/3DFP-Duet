@@ -1,0 +1,7 @@
+;Objective of file is to allow us to easily manipulate the z offset in order to get a good first layer when printing. 
+
+var filamentType = move.extruders[0].filament
+if var.filamentType == "Jelly"					;get "filament type"
+	G1 F900 X0 Y0 Z0.5 E0.03 F2				; Moves X,Y,Z motors at 900mm/s to coordinates and extrudes 0.03mm of material at 2mm/s
+else
+	G1 F900 X0 Y0 Z0.75 E0.03 F2			; Moves X,Y,Z motors at 900mm/s to coordinates and extrudes 0.03mm of material at 2mm/s

@@ -1,0 +1,3 @@
+; M98 P/macros/Required Macros/Home Extruder ; Runs the "Home Extruder Test" macro from the "aacros/Required Macros" directory
+echo "Inside Test_Macro"
+G92 X0 Y0 Z242.35								; sets the current position to "home" (wherever the printer is at runtime)
